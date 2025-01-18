@@ -44,10 +44,8 @@ Clone this repository to your local machine:
     npm run hardhat
     npm run deploy 
     npm run start 
-(Copy `Privatekey` address of any wallet after running  `npm run hardhat` and paste it in `.env` -> `WALLET_PRIVATE_KEY` inside `server` folder )
 
 (Copy deployment adress from `npm run deploy`  and paste it in `.env` -> `CONTRACT_ADDRESS` inside `server` folder)
-
 
 ## PROJECT STRUCTURE
 
