@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "axios": "^1.7.9",
+    "web3": "^4.16.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "concurrently": "^9.1.2",
+    "hardhat": "^2.22.18"
+  },
+  "scripts": {
+    "hardhat": "npm install -y && npx hardhat compile && npx hardhat node",
+    "deploy": "npx hardhat run scripts/deploy.js --network localhost",
+    "frontend": "cd todo-dapp && npm install -y && npm run dev",
+    "backend": "cd server && npm install -y && nodemon server.js",
+    "start": "concurrently  \"npm run backend\" \"npm run frontend\""
+  }
+}
